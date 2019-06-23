@@ -27,6 +27,7 @@ class Deck
     
 
     def take(n)
+        raise 'not enough cards' if n > @cards.count
         @cards.shift(n)
     end
 
